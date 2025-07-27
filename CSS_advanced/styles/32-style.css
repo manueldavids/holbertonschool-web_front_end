@@ -782,3 +782,51 @@ h2, h3, h4, h5, h6 {
   font-size: 10rem;
   z-index: -1;
 } 
+
+/* Reduce opacity of About us section image for better text readability */
+#about img {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#about img:hover {
+  opacity: 1;
+} 
+
+/* Add styles for blog cards */
+.card-blog {
+  margin-bottom: 2rem;
+}
+
+.card-blog img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.card-blog .card-category {
+  margin-bottom: 1rem;
+}
+
+.card-blog h3 {
+  margin-bottom: 1rem;
+}
+
+.card-blog h3 a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.card-blog h3 a:hover {
+  color: var(--color-primary);
+}
+
+.card-blog p {
+  margin-bottom: 1rem;
+  line-height: var(--line-height-base);
+}
+
+.card-blog small {
+  color: var(--color-dark-grey);
+  font-size: var(--font-size-small);
+} 
