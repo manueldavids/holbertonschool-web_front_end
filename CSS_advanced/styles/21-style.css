@@ -544,3 +544,10 @@ h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 } 
+
+/* Ensure footer logo maintains consistent 40x40px square dimensions */
+.footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+} 
