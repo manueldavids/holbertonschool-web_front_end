@@ -84,12 +84,3 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
 }
-
-/* Logo styling for perfect square */
-.header-logo img,
-.footer img[src*="logo-white"] {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 4px;
-}
