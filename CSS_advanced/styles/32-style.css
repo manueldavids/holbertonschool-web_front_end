@@ -376,19 +376,20 @@ summary {
   display: list-item;
 }
 
-/* Misc
+/* Scripting
    ========================================================================== */
 
-/**
- * Add the correct display in IE 10+.
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
  */
 
 template {
   display: none;
 }
 
-/**
- * Add the correct display in IE 10.
+/*
+ * Add the correct display in IE 10+.
  */
 
 [hidden] {
@@ -781,16 +782,6 @@ h2, h3, h4, h5, h6 {
   color: #efeded;
   font-size: 10rem;
   z-index: -1;
-} 
-
-/* Reduce opacity of About us section image for better text readability */
-#about img {
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
-}
-
-#about img:hover {
-  opacity: 1;
 } 
 
 /* Add styles for blog cards */
