@@ -99,54 +99,9 @@ pre {
   font-size: 1em; /* 2 */
 }
 
-/* Text-level semantics
-   ========================================================================== */
-
 /**
- * Remove the gray background on active links in IE 10.
- */
-
-a {
-  background-color: transparent;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-a:visited {
-  font-style: italic;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  background-color: var(--color-light-grey);
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
  */
 
 code,
@@ -504,78 +459,6 @@ template {
   padding: var(--footer-padding);
 }
 
-.footer .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer .col-1-2 {
-  display: flex;
-  align-items: center;
-}
-
-.footer .col-1-2:first-child {
-  justify-content: flex-start;
-}
-
-.footer .col-1-2:last-child {
-  justify-content: flex-end;
-}
-
-.footer img {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  margin-right: 1rem;
-}
-
-.footer-address {
-  color: var(--text-color);
-  margin: 0;
-}
-
-.social-link {
-  display: block;
-  margin: 0 0.5rem;
-}
-
-.social-link svg {
-  fill: var(--text-color);
-  width: 25px;
-  height: 25px;
-}
-
-.social.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-.social.nav .nav-item {
-  margin: 0 0.5rem;
-}
-
-.footer-nav.nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-nav.nav .nav-item {
-  margin: 0 1rem;
-}
-
-.footer-copyright {
-  margin: 0;
-  font-size: var(--font-size-small);
-  color: var(--text-color);
-}
-
 .navbar-menu {
   float: right;
 }
@@ -646,9 +529,45 @@ ul.row::after {
   width: 50%;
 }
 
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small);
+  color: var(--text-color);
+}
+
+.footer ul {
+  text-align: right;
+}
+
 h2, h3, h4, h5, h6 {
   font-family: var(--font-family-title);
   font-weight: var(--font-weight-bold);
+}
+
+/* Ensure footer logo maintains consistent 40x40px square dimensions */
+.footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* Dark theme for sections */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.footer-address {
+  color: var(--text-color);
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link svg {
+  fill: var(--text-color);
 }
 
 /* Add background and hover state to services */
@@ -856,4 +775,71 @@ h2, h3, h4, h5, h6 {
 .card-blog small {
   color: var(--color-dark-grey);
   font-size: var(--font-size-small);
+}
+
+/* Fix footer alignment and logo positioning */
+.footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .col-1-2 {
+  display: flex;
+  align-items: center;
+}
+
+.footer .col-1-2:first-child {
+  justify-content: flex-start;
+}
+
+.footer .col-1-2:last-child {
+  justify-content: flex-end;
+}
+
+.footer img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.footer-address {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.social-link {
+  display: block;
+  margin: 0 0.5rem;
+}
+
+.social-link svg {
+  fill: var(--text-color);
+  width: 25px;
+  height: 25px;
+}
+
+.social.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.social.nav .nav-item {
+  margin: 0 0.5rem;
+}
+
+.footer-nav.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav.nav .nav-item {
+  margin: 0 1rem;
 } 
