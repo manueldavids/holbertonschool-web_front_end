@@ -386,7 +386,7 @@ template {
   --nav-item-letter-spacing: 4%;
   --nav-item-display: inline-block;
   --nav-item-margin: 0 0 3rem 0;
-  --nav-item-link-hover: var(--color-white);
+  --nav-item-link-hover: var(--color-primary);
   --section-tagline-margin: 0;
   --button-display: inline-block;
   --button-padding: 1.5rem 3rem;
@@ -601,8 +601,6 @@ h2, h3, h4, h5, h6 {
   color: var(--button-hover-color);
   text-decoration: var(--button-hover-text-decoration);
   background-color: var(--button-hover-background);
-  transition-duration: var(--transition-duration);
-  transition-property: color, background-color;
 }
 
 [data-section-theme="dark"] {
